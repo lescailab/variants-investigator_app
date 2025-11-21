@@ -2,6 +2,7 @@
 # variantsinvestigator
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/lescailab/variants-investigator_app/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/lescailab/variants-investigator_app/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of variantsinvestigator is to ...
