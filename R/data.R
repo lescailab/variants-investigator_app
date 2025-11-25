@@ -1,4 +1,4 @@
-`light`
+
 #' Object defining the app's light mode ui layout
 #'
 #' @name light
@@ -12,7 +12,9 @@
 #'
 #'
 
-`dark`
+"light"
+
+
 #' Object defining the app's dark mode ui layout
 #'
 #' @name dark
@@ -26,7 +28,10 @@
 #'
 #'
 
-`refgenome_model`
+"dark"
+
+
+
 #' Dataset containing exome references for gene matching
 #'
 #' @name refgenome_model
@@ -49,24 +54,5 @@
 #' @source created with TxDb.Hsapiens.UCSC.hg19.knownGene R package
 #'
 
-`express_data.sqlite`
-#' Sql containing the expression data reference
-#'
-#'
-#' @name express_data
-#' @usage used in the tissues expression scores tab
-#'
-#' @format ## `dataset sqlite`
-#' An SQL database containing one table with 3 columns:
-#' \describe{
-#'  \item{expression_data}{the table containing the expression data values}
-#'  \item{gene}{genes' names column}
-#'  \item{tissue}{tissue name}
-#'  \item{nTPM}{number of gene trascripts per million in the specified tissue}
-#'  }
-#'
-#'  @source generated using GTEx informations
+"refgenome_model"
 
-
-system.file("extdata", "example.vcf.gz", package = "variantsinvestigator")
-system.file("extdata", "express_data.sqlite", package = "RSQLite")
