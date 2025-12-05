@@ -1,6 +1,6 @@
 #' Gene visualisation functions
 #'
-#' @import Gviz
+#' @importFrom Gviz AnnotationTrack IdeogramTrack GenomeAxisTrack GeneRegionTrack plotTracks getScheme addScheme
 #' @import GenomicRanges
 #' @import IRanges
 #'

@@ -5,11 +5,11 @@
 #'
 #' @import bslib
 #' @import DBI
-#' @import DT
+#' @importFrom DT datatable
 #' @import GenomicFeatures
 #' @import GenomicRanges
 #' @import gt
-#' @import Gviz
+#' @importFrom Gviz AnnotationTrack IdeogramTrack GenomeAxisTrack GeneRegionTrack plotTracks
 #' @import IRanges
 #' @import reticulate
 #' @import RSQLite
@@ -337,7 +337,7 @@ VariantsInvestigator <- function(){
       #variant table tab
       nav_panel(
         "Variants",
-        DTOutput(outputId = "table"),
+        DT::DTOutput(outputId = "table"),
         fillable = FALSE,
 
       ),
@@ -347,7 +347,7 @@ VariantsInvestigator <- function(){
         "Tissues expression scores",
         uiOutput("dropdownbutt2"),
         uiOutput("notefilter"),
-        DTOutput(outputId = "tissue_info")
+        DT::DTOutput(outputId = "tissue_info")
 
       ),
 
@@ -363,7 +363,7 @@ VariantsInvestigator <- function(){
       #number of mutations per gene tab
       nav_panel(
         "Mutations on each gene",
-        DTOutput(outputId = "symbol_num")
+        DT::DTOutput(outputId = "symbol_num")
 
       )
     )
