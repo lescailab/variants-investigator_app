@@ -41,7 +41,7 @@ vcfToSQL <- function(){
     if (file.exists(script_path)) {
         source_python(script_path)
     } else {
-        warning("Python script convert_vcf_to_sql.py not found.")
+        stop("Python script convert_vcf_to_sql.py not found.")
     }
 
     volumes <- getVolumes()()
