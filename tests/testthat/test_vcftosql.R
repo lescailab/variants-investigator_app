@@ -8,5 +8,5 @@ test_that("variantsinvestigator sql initial values are consistent", {
 
   app <- AppDriver$new(vcfToSQL(), name = "variantsinvestigator-vcftosql")
 
-  app$expect_values()
+  expect_setequal(names(app$get_values()$input), c("run_convert", "sqlite_file", "vcf_file"))
 })

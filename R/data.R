@@ -2,7 +2,7 @@
 #' Object defining the app's light mode ui layout
 #'
 #' @name light
-#' @usage toggle switch in the ui
+#'
 #'
 #' @format ## `R object`
 #' An object describing the ui light mode's colour patterns
@@ -18,12 +18,12 @@
 #' Object defining the app's dark mode ui layout
 #'
 #' @name dark
-#' @usage toggle switch in the ui
+#'
 #'
 #' @format ## `R object`
 #' An object describing the ui dark mode's colour patterns
 #' \describe{
-#'  \item {dark}{a bstheme object containing information on theme and colours of the application's dark mode}
+#'  \item{dark}{a bstheme object containing information on theme and colours of the application's dark mode}
 #'  }
 #'
 #'
@@ -35,7 +35,7 @@
 #' Dataset containing exome references for gene matching
 #'
 #' @name refgenome_model
-#' @usage used in the affected transcripts tab of the app
+#'
 #'
 #' @format ## `tibble`
 #' A tibble with 10 columns

@@ -26,7 +26,7 @@ A tibble with 10 columns
 created with TxDb.Hsapiens.UCSC.hg19.knownGene R package
 }
 \usage{
-used in the affected transcripts tab of the app
+refgenome_model
 }
 \description{
 Dataset containing exome references for gene matching

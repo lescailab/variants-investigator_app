@@ -4,5 +4,5 @@ utils::globalVariables(c(
   "lof", "nTPM", "pubmed", "ref", "start", "symbol", "transcript",
   "convertVCFtoSQL", "light", "dark", "NoTE", "cutoff_met", "ppsum",
   "sift_values", "polyphen_values", "vars_expression", "Varsome", "nTissue",
-  "maxTissue", "total_vars"
+  "maxTissue", "total_vars", "chr", "Tissue"
 ))

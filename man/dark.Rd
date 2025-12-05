@@ -9,12 +9,12 @@
 
 An object describing the ui dark mode's colour patterns
 \describe{
-\item {dark}{a bstheme object containing information on theme and colours of the application's dark mode}
+\item{dark}{a bstheme object containing information on theme and colours of the application's dark mode}
 }
 }
 }
 \usage{
-toggle switch in the ui
+dark
 }
 \description{
 Object defining the app's dark mode ui layout

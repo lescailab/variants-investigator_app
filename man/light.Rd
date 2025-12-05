@@ -14,7 +14,7 @@ An object describing the ui light mode's colour patterns
 }
 }
 \usage{
-toggle switch in the ui
+light
 }
 \description{
 Object defining the app's light mode ui layout

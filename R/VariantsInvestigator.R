@@ -14,11 +14,14 @@
 #' @import reticulate
 #' @import RSQLite
 #' @import shiny
+#' @importFrom dplyr mutate filter select arrange relocate group_by summarise rename ungroup distinct case_when n rowwise
+#' @importFrom tidyr separate_wider_delim
+#' @importFrom purrr map
+#' @importFrom utils write.table
+#' @importFrom stringr str_count str_sub
+#' @import tibble
 #' @import shinyFiles
 #' @import shinyWidgets
-#' @import tibble
-#' @import tidyverse
-#' @import stringr
 #'
 #' @return A Shiny app object
 #'
@@ -398,7 +401,7 @@ VariantsInvestigator <- function(){
 
       #error message for no file input
       s_file <- parseFilePaths(
-        root=c(root='.'), input$files)
+        roots=c(root='.'), input$files)
       validate(
         need(s_file$datapath != "", message = "Please select a data set"
         )
@@ -688,7 +691,7 @@ VariantsInvestigator <- function(){
       )
     })
 
-    output$symbol_num <- renderDT({
+    output$symbol_num <- DT::renderDT({
 
       #number of variants per gene table
       data_vars <- sqlfunc() %>%

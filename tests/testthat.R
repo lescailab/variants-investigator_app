@@ -9,5 +9,4 @@
 library(testthat)
 library(variantsinvestigator)
 
-test_check("vcftosql")
-test_check("run-app")
+test_check("variantsinvestigator")
