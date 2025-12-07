@@ -40,7 +40,7 @@ jobs:
           use-public-rspm: true
 
       - name: Preinstall isoband
-        run: Rscript -e 'install.packages("isoband", repos = "https://cran.rstudio.com")'
+        run: Rscript -e 'install.packages("isoband", repos = "https://cran.rstudio.com", type = "source")'
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
