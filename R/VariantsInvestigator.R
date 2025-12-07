@@ -18,7 +18,7 @@
 #' @importFrom tidyr separate_wider_delim
 #' @importFrom purrr map
 #' @importFrom utils write.table
-#' @importFrom stringr str_count str_sub
+#' @importFrom stringr str_count str_sub str_detect
 #' @import tibble
 #' @import shinyFiles
 #' @import shinyWidgets

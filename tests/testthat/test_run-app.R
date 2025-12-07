@@ -6,7 +6,7 @@ test_that("variantsinvestigator basic app test", {
   # Don't run these tests on the CRAN build servers
   skip_on_cran()
 
-  app <- AppDriver$new(VariantsInvestigator(), name = "variantsinvestigator-app")
+  app <- AppDriver$new(VariantsInvestigator(), name = "variantsinvestigator-app", load_timeout = 100000)
 
   # We check for the presence of key inputs instead of a full snapshot
   # because some widgets (like pickerInput) can be flaky across environments

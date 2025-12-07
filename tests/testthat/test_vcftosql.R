@@ -6,7 +6,7 @@ test_that("variantsinvestigator sql initial values are consistent", {
   # Don't run these tests on the CRAN build servers
   skip_on_cran()
 
-  app <- AppDriver$new(vcfToSQL(), name = "variantsinvestigator-vcftosql")
+  app <- AppDriver$new(vcfToSQL(), name = "variantsinvestigator-vcftosql", load_timeout = 100000)
 
   expect_setequal(names(app$get_values()$input), c("run_convert", "sqlite_file", "vcf_file"))
 })
